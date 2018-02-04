@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-  log.Printf("Hello World!")
+  ddd()
 }
 
 func ddd() {
