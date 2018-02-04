@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-  ddd()
+  log.Println("main test")
 }
 
 func ddd() {

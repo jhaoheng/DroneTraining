@@ -4,6 +4,10 @@ import (
   "testing"
 )
 
-func Test_1(t *testing.T) {
+func Test_main(t *testing.T) {
+  main()
+}
+
+func Test_ddd(t *testing.T) {
   ddd()
 }
