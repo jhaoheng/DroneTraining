@@ -9,10 +9,10 @@ pipeline:
    # environment:
    #   - KEY=VALUE
    # secrets: [key1, key2]
-   commands:
-    - pwd
-    - ls
-    - date
+   commands: commands.sh
+    # - pwd
+    # - ls
+    # - date
      # - echo $$KEY
      # - pwd
      # - ls
