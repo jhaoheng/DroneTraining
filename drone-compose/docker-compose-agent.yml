@@ -9,4 +9,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:rw
     environment:
       - DRONE_SECRET=drone # host secret
-      - DRONE_SERVER=13.228.73.24:9000 # {ip}:{port} or {dns}:{port} don't set {scheme}
+      - DRONE_SERVER=:9000 # {ip}:{port} or {dns}:{port} don't set {scheme}
