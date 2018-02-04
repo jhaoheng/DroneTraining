@@ -14,10 +14,10 @@ pipeline:
    # secrets: [key1, key2]
    commands: 
     # - chmod +x /srv/drone-demo/example/command.sh
-    - /srv/drone-demo/example/command.sh
-    # - pwd
-    # - ls
-    # - date
+    # - /srv/drone-demo/example/command.sh
+    - pwd
+    - ls
+    - date
      # - echo $$KEY
      # - pwd
      # - ls
