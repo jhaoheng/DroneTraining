@@ -3,6 +3,9 @@ workspace:
   path: ./example
 
 pipeline:
+  codecov:
+    image: robertstettner/drone-codecov
+    token: d8ed8d81-e443-4699-bd03-981b6f62e470
   build:
    image: golang:alpine
    pull: true
@@ -10,7 +13,7 @@ pipeline:
    #   - KEY=VALUE
    # secrets: [key1, key2]
    commands: 
-    - chmod +x /srv/drone-demo/example/command.sh
+    # - chmod +x /srv/drone-demo/example/command.sh
     - /srv/drone-demo/example/command.sh
     # - pwd
     # - ls
