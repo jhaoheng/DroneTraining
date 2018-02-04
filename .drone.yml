@@ -12,6 +12,7 @@ pipeline:
    commands:
     - pwd
     - ls
+    - date
      # - echo $$KEY
      # - pwd
      # - ls
