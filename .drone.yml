@@ -1,6 +1,6 @@
 workspace:
   base: /srv/drone-demo
-  path: .
+  path: ./example
 
 pipeline:
   build:
