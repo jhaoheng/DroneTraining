@@ -8,19 +8,13 @@ pipeline:
     pull: true
     # environment:
     #   - KEY=VALUE
-    # secrets: [key1, key2]
     commands: 
     # - chmod +x /srv/drone-demo/example/command.sh
     # - /srv/drone-demo/example/command.sh
       - pwd
       - ls
       - date
-      - go test -coverprofile=coverage.out
-     # - echo $$KEY
-     # - pwd
-     # - ls
-     # - CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
-     # - ./app
+      - go test ./go-example -coverprofile=coverage.out
   
   codecov:
     image: robertstettner/drone-codecov
