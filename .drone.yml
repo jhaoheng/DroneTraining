@@ -15,7 +15,7 @@ pipeline:
       - pwd
       - ls
       - date
-      - go test
+      - go test -coverprofile=coverage.out
      # - echo $$KEY
      # - pwd
      # - ls
@@ -25,3 +25,5 @@ pipeline:
   codecov:
     image: robertstettner/drone-codecov
     token: d8ed8d81-e443-4699-bd03-981b6f62e470
+    files:
+      - /srv/drone-demo/example/coverage.out

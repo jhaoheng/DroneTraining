@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+  "log"
+)
 
 func main() {
-  fmt.Printf("Hello World!")
+  log.Printf("Hello World!")
+}
+
+func ddd() {
+  log.Printf("test func!")
 }
