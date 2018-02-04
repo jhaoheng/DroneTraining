@@ -9,7 +9,7 @@ pipeline:
    # environment:
    #   - KEY=VALUE
    # secrets: [key1, key2]
-   commands: /srv/drone-demo/example/commands.sh
+   commands: /srv/drone-demo/example/command.sh
     # - pwd
     # - ls
     # - date
