@@ -3,23 +3,25 @@ workspace:
   path: ./example
 
 pipeline:
-  codecov:
-    image: robertstettner/drone-codecov
-    token: d8ed8d81-e443-4699-bd03-981b6f62e470
   build:
-   image: golang:alpine
-   pull: true
-   # environment:
-   #   - KEY=VALUE
-   # secrets: [key1, key2]
-   commands: 
+    image: golang:alpine
+    pull: true
+    # environment:
+    #   - KEY=VALUE
+    # secrets: [key1, key2]
+    commands: 
     # - chmod +x /srv/drone-demo/example/command.sh
     # - /srv/drone-demo/example/command.sh
-    - pwd
-    - ls
-    - date
+      - pwd
+      - ls
+      - date
+      - go test
      # - echo $$KEY
      # - pwd
      # - ls
      # - CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
      # - ./app
+  
+  codecov:
+    image: robertstettner/drone-codecov
+    token: d8ed8d81-e443-4699-bd03-981b6f62e470
