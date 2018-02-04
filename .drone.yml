@@ -27,3 +27,8 @@ pipeline:
     token: d8ed8d81-e443-4699-bd03-981b6f62e470
     files:
       - /srv/drone-demo/example/coverage.out
+
+  slack:
+    image: plugins/slack
+    webhook: https://hooks.slack.com/services/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
+    channel: jhaoheng
