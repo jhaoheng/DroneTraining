@@ -1,6 +1,6 @@
 # slideshow
 
-https://www.slideshare.net/jhaohenghu/drone-cicd-87224899
+https://www.slideshare.net/jhaohenghu/use-drone-to-cicd
 
 # coverage.out
 
