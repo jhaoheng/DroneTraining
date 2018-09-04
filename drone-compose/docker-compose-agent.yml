@@ -1,6 +1,6 @@
 version: '3.5'
 services:
-  drone-agent:
+  drone_agent:
     image: drone/agent:latest
     container_name: drone_agent
     restart: always
