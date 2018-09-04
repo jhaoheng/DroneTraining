@@ -10,8 +10,8 @@ services:
       - ./drone-data:/var/lib/drone/:rw
     restart: always
     environment:
-      - DRONE_OPEN=true
       - DOCKER_API_VERSION=1.24
+      - DRONE_OPEN=true
       - DRONE_SECRET=drone
       - DRONE_GITHUB_URL=https://github.com
       - DRONE_HOST=http://localhost # ${DRONE_HOST} # {scheme}://{ip} or {scheme}://{dns} 
