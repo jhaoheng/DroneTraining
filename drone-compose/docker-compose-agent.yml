@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 services:
   drone-agent:
     image: drone/agent:latest
@@ -10,4 +10,10 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:rw
     environment:
       - DRONE_SECRET=drone # host secret
-      - DRONE_SERVER=:9000 # {ip}:{port} or {dns}:{port} don't set {scheme}
+      - DRONE_SERVER=13.113.68.244:9000 # {ip}:{port} or {dns}:{port} don't set {scheme}
+      - DRONE_KEEPALIVE=6m
+    networks:
+      - drone
+networks:
+  drone:
+    name: drone
