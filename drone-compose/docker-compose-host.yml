@@ -2,6 +2,7 @@ version: '3'
 services:
   drone-server:
     image: drone/drone:latest
+    container_name: drone_server
     ports:
       - 80:8000
       - 9000:9000
@@ -11,7 +12,7 @@ services:
     environment:
       - DRONE_SECRET=drone
       - DRONE_OPEN=true
-      - DRONE_HOST=${DRONE_HOST} # {scheme}://{ip} or {scheme}://{dns} 
+      - DRONE_HOST=http://localhost # ${DRONE_HOST} # {scheme}://{ip} or {scheme}://{dns} 
       - DRONE_GITHUB=true
-      - DRONE_GITHUB_CLIENT=${DRONE_GITHUB_CLIENT}
-      - DRONE_GITHUB_SECRET=${DRONE_GITHUB_SECRET}
+      - DRONE_GITHUB_CLIENT=0f53124a40c7353e0caa #${DRONE_GITHUB_CLIENT}
+      - DRONE_GITHUB_SECRET=0ef39bf0e2a38a19e424f9b1f48dad9729fb5b6d #${DRONE_GITHUB_SECRET}

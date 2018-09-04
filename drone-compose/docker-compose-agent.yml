@@ -2,6 +2,7 @@ version: '3'
 services:
   drone-agent:
     image: drone/agent:latest
+    container_name: drone_agent
     restart: always
     # depends_on:
     #   - drone-server
