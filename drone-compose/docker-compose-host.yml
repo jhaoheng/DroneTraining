@@ -12,7 +12,8 @@ services:
     environment:
       - DRONE_SECRET=drone
       - DRONE_OPEN=true
+      - DRONE_GITHUB_URL=https://github.com
       - DRONE_HOST=http://localhost # ${DRONE_HOST} # {scheme}://{ip} or {scheme}://{dns} 
       - DRONE_GITHUB=true
-      - DRONE_GITHUB_CLIENT=0f53124a40c7353e0caa #${DRONE_GITHUB_CLIENT}
-      - DRONE_GITHUB_SECRET=0ef39bf0e2a38a19e424f9b1f48dad9729fb5b6d #${DRONE_GITHUB_SECRET}
+      - DRONE_GITHUB_CLIENT=0ac557124e7ed34a4cea #${DRONE_GITHUB_CLIENT}
+      - DRONE_GITHUB_SECRET=863c3bf5a2b5e1fe77c6bb07f1e6ef63f2f2d5c7 #${DRONE_GITHUB_SECRET}
