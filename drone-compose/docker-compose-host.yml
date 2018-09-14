@@ -14,7 +14,7 @@ services:
       - DOCKER_API_VERSION=1.24
       - DRONE_OPEN=true
       - DRONE_SECRET=drone
-      - DRONE_HOST=http://localhost # ${DRONE_HOST} # {scheme}://{ip} or {scheme}://{dns} 
+      - DRONE_HOST=http://13.113... # ${DRONE_HOST} # {scheme}://{ip} or {scheme}://{dns} 
       - DRONE_GITHUB=true
       - DRONE_GITHUB_URL=https://github.com
       - DRONE_GITHUB_CLIENT=0ac557124e7ed34a4cea #${DRONE_GITHUB_CLIENT}
